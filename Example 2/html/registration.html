@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Регистрация пользователя</title>
+</head>
+<body>
+	<h2>Регистрация пользователя</h2>
+	<form method="post" action="../bd/registration.php">
+		<label>Имя пользователя:</label>
+		<input type="text" name="username"><br><br>
+		
+		<label>Пароль:</label>
+		<input type="password" name="password"><br><br>
+		
+		<label>Подтверждение пароля:</label>
+		<input type="password" name="confirm_password"><br><br>
+		
+		<label>Email:</label>
+		<input type="email" name="email"><br><br>
+		
+		<input type="submit" name="submit" value="Зарегистрироваться">
+	</form>
+</body>
+</html>
