@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid green; */
+}
+
+body, html {
+    font-weight: 300;
+    font-family: "Bookman Old Style", Georgia, serif;
+    color: rgba(46, 41, 49, 1);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100%;
+}
+
+.Group-12{
+    padding: 10px 15px;
+}
+
+.icon {
+    border-radius: 100%;
+    background: linear-gradient(transparent, transparent) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border: 3px solid transparent;
+    width: 50px;
+}
+
+.url {
+    margin-top: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+    margin: auto;
+    padding-left: 15px;
+    background: linear-gradient(172.1deg, #B48BCA 0.43%, rgba(255, 138, 252, 0) 151.47%);
+}
+
+.My-works {
+    margin-left: -65px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: "Bookman Old Style", Georgia, serif;
+    font-size: 40px;
+}
+
+.image {
+    margin-top: -12px;
+    padding-top: 40px;
+}
+
+.text {
+    position: relative;
+    margin-top: -90px;
+    font-size: 32px;
+    padding-left: 10px;
+    font-family: "Bookman Old Style", Georgia, serif;
+    width: 100%;
+}
+
+.about {
+    margin-left: -25px;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 34px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .carousel {
+    position: relative;
+    height: 265px;
+    width: 345px;
+    margin: 0;
+  } */
+
+.container {
+    position: relative;
+    width: 344px;
+    display: flex;
+    overflow-x: scroll;
+    margin: auto;
+}
+
+.container img {
+    width: 345px;
+}
+
+.navigation {
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    padding-top: 15px;
+    width: fit-content;
+    padding-bottom: 60px;
+}
+
+.navigation .button {
+    width: 10px;
+    aspect-ratio: 1/1;
+    background: #adadad;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.navigation .button.active {
+    transform: scale(1.5);
+    transition: all 300ms linear;
+}
