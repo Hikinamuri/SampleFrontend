@@ -1,47 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="1.css">
+    <!-- <link rel="stylesheet" href="1.css"> -->
+    <link rel="stylesheet" href="2.css">
     <script src="1.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/js/uikit-icons.min.js"></script>
 </head>
+
 <body>
     <header>
         <div class="Group-12">
             <img src="icon.png" alt="" class="icon">
-            <a href="https://www.instagram.com/v.nails.beauty/"><p class="url">@V.MANICURE</p></a>
+            <a class="url" href="https://www.instagram.com/v.nails.beauty/">@V.MANICURE</a>
         </div>
     </header>
     <main>
-        <div class="image">
-            <img src="Mask group.png" alt="">
-            <p class="text">Я - ФУДИНА <br> ВЕРА</p>
-        </div>
-        <div class="about">
-            <p>
-            Я предлагаю вам <br> профессиональные курсы <br>
-            повышения квалификации и <br> обучекия маникюру и <br> педикюру
-            </p>
-        </div>
-        <div>
-            <p class="My-works">МОИ РАБОТЫ</p>
-        </div>
-        <div class="carousel">
-            <div class="container" id="cour">
-                <img src="img1.jpg">
-                <img src="img2.png">
-                <img src="img3.png">
-                <img src="img4.png">
+        <div class="general">
+            <div class="image">
+                <img src="Mask group.png">
+                <p class="name">Я - ФУДИНА <br> ВЕРА</p>
             </div>
-            <div class="navigation">
-                <div class="button" id="button-1"></div>
-                <div class="button" id="button-2"></div>
-                <div class="button" id="button-3"></div>
-                <div class="button" id="button-4"></div>
+            <div class="about">
+                <p>
+                    Я предлагаю вам профессиональные курсы 
+                    повышения квалификации и обучекия маникюру и педикюру
+                </p>
+                <div class="container">
+                    <h1 class="My-works">МОИ РАБОТЫ</h1>
+                    <div uk-slider="finite: true">
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                            <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-1@m" motion>
+                                <li class="uk-slider-item">
+                                    <img src="img1.jpg" alt="Слайдер">
+                                </li>
+                                <li class="uk-slider-item">
+                                    <img src="img2.png" alt="Слайдер">
+                                </li>
+                                <li class="uk-slider-item">
+                                    <img src="img3.png" alt="Слайдер">
+                                </li>
+                                <li class="uk-slider-item">
+                                    <img src="img4.png" alt="Слайдер">
+                                </li>
+                                <li class="uk-slider-item">
+                                    <img src="img5.png" alt="Слайдер">
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 </body>
+
 </html>

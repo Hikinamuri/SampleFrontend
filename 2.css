@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: rgba(46, 41, 49, 1);
+    font-family: "Bookman Old Style", Georgia, serif;
+    font-weight: 300;
+}
+
+header .Group-12 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+header .Group-12 .icon {
+    border-radius: 100%;
+    border: 3px solid transparent;
+    width: 75px;
+    background: linear-gradient(transparent, transparent) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+}
+
+header .Group-12 .url {
+    color: rgba(46, 41, 49, 1);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+main {
+    background: linear-gradient(172.1deg, #B48BCA 0.43%, rgba(255, 138, 252, 0) 151.47%);
+    padding: 50px 200px;
+}
+
+main .general {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+main .general img {
+    height: 600px;
+}
+
+main .general .name {
+    margin-left: 25px;
+    margin-top: -130px;
+    font-size: 45px;
+}
+
+main .general .about p {
+    font-size: 25px;
+    max-width: 345px;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .My-works {
+    font-family: "Bookman Old Style", Georgia, serif;
+}
+
+main .container ul,
+main .container ul li
+{
+    width: 349px!important;
+}
+
+main .container ul li img {
+    width: 350px!important;
+    height: 263px!important;
+}
+
+main .container ul.uk-dotnav {
+    height: auto!important;
+}
+
+main .container ul.uk-dotnav li {
+    width: auto!important;
+    height: auto!important;
+}
+
+@media only screen and (max-width: 1500px) {
+    main {
+        padding: 50px 50px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    main {
+        padding: 50px 15px;
+    }
+
+    main .general,
+    main .general .about
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    main .general .image img {
+        height: auto;
+        width: 100%;
+    }
+
+    main .general .name {
+        font-size: 32px;
+        margin-top: -90px;
+    }
+}
